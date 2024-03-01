@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO JQUERY</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("span").dblclick(function () {
+                $(this).html('<span class="valor">$100.000</span>');
+            }); 
+        });
+    </script>
+    <script>
+            $(document).ready(function () {
+                $("img").dblclick(function () {
+                    $( "#imagen" ).css( "border", "3px solid blue" );
+                }); 
+            });
+    </script>
+    <style>
+        .vacaciones {
+            background-color: yellow;
+        }
+        li {
+            list-style:none
+        }
+    </style>
+</head>
+<body>
+<li class="vacaciones">
+    <div id="imagen">
+        <img src="assets/img/imagen.jpg" alt="">
+    </div>
+    <script>
+        $( "#imagen" ).css( "border", "3px solid red" );
+    </script>
+    <h2 class="centrado" >La Serena, Chile</h2>
+    <script>
+        $( ".centrado" ).css( "text-align: center;" );
+    </script>
+    <span class="valor">$120.000</span>
+    <script>
+        $( "img, #imagen, h2.centrado" ).css( "border", "3px solid white" );
+    </script>
+</li>
+</body>
+</html>
